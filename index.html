@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A premium, responsive tribute website for Virat Kohli with career stats, milestones, iconic matches, and media highlights."
+    />
+    <title>Virat Kohli | The Run Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#home">
+          <span class="brand-mark">VK</span>
+          <span>Virat Kohli</span>
+        </a>
+        <nav class="site-nav" aria-label="Main Navigation">
+          <a href="#about">Journey</a>
+          <a href="#stats">Stats</a>
+          <a href="#matches">Moments</a>
+          <a href="#media">Media</a>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow">India’s modern batting icon</p>
+            <h1>The Run Machine</h1>
+            <h2>King Kohli</h2>
+            <p class="hero-copy">
+              From a fearless youngster in Delhi to a global cricket legend,
+              Virat Kohli redefined consistency, intensity, and greatness.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#stats">Explore Career</a>
+              <a class="button button-secondary" href="#matches">Iconic Matches</a>
+           
+        </section>
+
+        <section id="about" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Life journey</p>
+            <h3>From discipline to destiny</h3>
+          </div>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <span class="timeline-year">2002</span>
+              <h4>Early promise in West Delhi</h4>
+              <p>
+                Kohli’s passion for cricket bloomed through relentless practice,
+                local tournaments, and the grounding influence of his family.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-year">2008</span>
+              <h4>Under-19 World Cup win</h4>
+              <p>
+                He led India to the Under-19 World Cup title and announced
+                himself as a future star on the national stage.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-year">2013</span>
+              <h4>Captaincy and dominance</h4>
+              <p>
+                The transition to leadership brought an era of aggressive intent,
+                fearless batting, and unmatched consistency in all formats.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-year">2018</span>
+              <h4>Peak global stature</h4>
+              <p>
+                He became the face of modern Indian cricket with record-breaking
+                runs, iconic knocks, and a culture of excellence.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-year">2023–24</span>
+              <h4>A record-breaking 50th ODI ton, then a world title</h4>
+              <p>
+                He became the first man to 50 ODI centuries at the 2023 World
+                Cup, then closed the chapter on India's T20I trophy drought
+                with the 2024 T20 World Cup win.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-year">2025–26</span>
+              <h4>Farewell to whites, RCB's long-awaited crown</h4>
+              <p>
+                Kohli retired from Test cricket in May 2025, then finally lifted
+                the IPL trophy with RCB — and led them to a second straight
+                title in 2026.
+              </p>
+            </article>
+          </div>
+
+          <div class="story-card">
+            <div>
+              <p class="eyebrow">Struggles & strength</p>
+              <h4>Loss, grit, and the rise of a legend</h4>
+            </div>
+            <p>
+              During a Ranji Trophy match, Virat lost his father at a crucial
+              point in his life. That heartbreak shaped his resolve, and he went
+              on to turn adversity into a relentless pursuit of excellence.
+            </p>
+          </div>
+        </section>
+
+        <section id="stats" class="section section-alt">
+          <div class="section-heading">
+            <p class="eyebrow">Career dashboard</p>
+            <h3>Numbers that define greatness</h3>
+          </div>
+
+          <!-- Tabs, panels and stat cards below are generated entirely from the
+               STATS_DATA object in script.js. To correct or update a number,
+               edit that one object — nothing here needs to change by hand. -->
+          <div class="tabs" id="statsTabs" role="tablist" aria-label="Career statistics"></div>
+          <div class="tab-panels" id="statsPanels"></div>
+          <p class="stats-note" id="statsAsOf"></p>
+        </section>
+
+        <section id="matches" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Iconic matches</p>
+            <h3>Masterclass innings and clutch pressure</h3>
+          </div>
+          <div class="filter-row" role="group" aria-label="Match filters">
+            <button class="filter-chip active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-chip" data-filter="Test" aria-pressed="false">Tests</button>
+            <button class="filter-chip" data-filter="ODI" aria-pressed="false">ODIs</button>
+            <button class="filter-chip" data-filter="T20 World Cup" aria-pressed="false">T20 World Cup</button>
+            <button class="filter-chip" data-filter="IPL" aria-pressed="false">IPL</button>
+          </div>
+          <div class="matches-grid">
+            <article class="match-card" data-category="ODI">
+              <span class="match-tag">ODI</span>
+              <h4>183 vs Pakistan</h4>
+              <p>2012, a jaw-dropping innings that showcased fearless strokeplay.</p>
+            </article>
+            <article class="match-card" data-category="T20 World Cup">
+              <span class="match-tag">T20 World Cup</span>
+              <h4>82* vs Australia</h4>
+              <p>2016, an unbeaten knock that defined India’s campaign momentum.</p>
+            </article>
+            <article class="match-card" data-category="T20 World Cup">
+              <span class="match-tag">T20 World Cup</span>
+              <h4>82* vs Pakistan</h4>
+              <p>2022 Melbourne, another masterclass under pressure with a title race on the line.</p>
+            </article>
+            <article class="match-card" data-category="ODI">
+              <span class="match-tag">ODI</span>
+              <h4>50th ODI Century</h4>
+              <p>2023 World Cup semi-final, a statement hundred in a historic knockout match.</p>
+            </article>
+            <article class="match-card" data-category="IPL">
+              <span class="match-tag">IPL</span>
+              <h4>113 vs Rajasthan Royals</h4>
+              <p>RCB’s bold talisman delivered one of the most iconic knocks of the league.</p>
+            </article>
+            <article class="match-card" data-category="Test">
+              <span class="match-tag">Test</span>
+              <h4>254* vs South Africa</h4>
+              <p>One of his most sublime Test double-centuries, full of patience and authority.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="media" class="section section-alt">
+          <div class="section-heading">
+            <p class="eyebrow">Media gallery</p>
+            <h3>Moments, portraits, and highlights</h3>
+          </div>
+          <div class="gallery-grid" id="galleryGrid">
+            <button
+              class="gallery-card"
+              data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_portrait.jpg?width=900"
+             
+              aria-label="Open portrait of Virat Kohli"
+            >
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_portrait.jpg?width=500"
+                alt="Portrait of Virat Kohli"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_batting_2013.jpg?width=900"
+              data-credit="via Wikimedia Commons, CC BY-SA 4.0"
+              aria-label="Open photo of Virat Kohli batting, 2013"
+            >
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_batting_2013.jpg?width=500"
+                alt="Virat Kohli batting during the 2013 ICC Champions Trophy"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_after_his_century_at_Trent_Bridge_(cropped).jpg?width=900"
+              data-credit="via Wikimedia Commons, CC BY 2.0"
+              aria-label="Open photo of Virat Kohli celebrating a century at Trent Bridge"
+            >
+              <img
+                src="https://www.bing.com/th/id/OIP.vihLzit806DhdWlvl0-pywHaEz?w=251&h=211&c=8&rs=1&qlt=90&o=6&pid=ImgMag&rm=2"
+                alt="Virat Kohli celebrating his century at Trent Bridge, 2018"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Viratkohli.jpg?width=900"
+              data-credit="Bollywood Hungama, CC BY 3.0, via Wikimedia Commons"
+              aria-label="Open portrait of Virat Kohli"
+            >
+              <img
+                src="https://www.bing.com/th/id/OIP.Yt6GbhP8G-jMCyJOVG49vgHaGt?w=176&h=211&c=8&rs=1&qlt=90&o=6&pid=ImgMag&rm=2"
+                alt="Portrait of Virat Kohli"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_January_2015.jpg?width=900"
+              data-credit="Naparazzi, CC BY-SA 2.0, via Wikimedia Commons"
+              aria-label="Open photo of Virat Kohli on the field, 2015"
+            >
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Virat_Kohli_January_2015.jpg?width=500"
+                alt="Virat Kohli on the cricket field, January 2015"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="1.jpg"
+              data-credit="Local gallery image"
+              aria-label="Open photo of Virat Kohli, 2015"
+            >
+              <img
+                src="1.jpg"
+                alt="Virat Kohli, January 2015"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="2.jpg"
+              data-credit="Local gallery image"
+              aria-label="Open photo of Virat Kohli from the local gallery"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Virat_Kohli_with_AudiQ7.png/250px-Virat_Kohli_with_AudiQ7.png"
+                alt="Virat Kohli in another gallery shot"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+              data-image="3.jpg"
+              data-credit="Local gallery image"
+              aria-label="Open another photo of Virat Kohli"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Virat_Kohli%27s_bat_at_Blades_of_Glory_Cricket_Museum%2C_Pune.jpg/250px-Virat_Kohli%27s_bat_at_Blades_of_Glory_Cricket_Museum%2C_Pune.jpg"
+                alt="Virat Kohli in a gallery shot"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="gallery-card"
+           
+              data-credit="Local gallery image"
+              aria-label="Open another photo of Virat Kohli"
+            >
+              <img
+                src="https://www.bing.com/th/id/OIP.X7DXpEwdCDgrHMLdu913ZwHaHr?w=200&h=211&c=8&rs=1&qlt=90&o=6&pid=ImgMag&rm=2"
+                alt="Virat Kohli gallery image"
+                loading="lazy"
+              />
+            </button>
+
+          </div>
+        
+
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-frame">
+                <video controls preload="metadata" playsinline>
+                  <source src="3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="video-frame">
+                <video controls preload="metadata" playsinline>
+                  <source src="2.mp4" type="video/mp4" />
+      
+                </video>
+              </div>
+             
+            </article>
+            <article class="video-card">
+              <div class="video-frame">
+                <video controls preload="metadata" playsinline>
+                  <source src="1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              
+            </article>
+            <article class="video-card">
+              <div class="video-frame">
+                <video controls preload="metadata" playsinline>
+                  <source src="4mp4.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>crafted for the king of modern batting — Virat Kohli</p>
+      </footer>
+    </div>
+
+    <div class="modal" id="lightbox" aria-hidden="true">
+      <button class="modal-close" id="closeLightbox" aria-label="Close lightbox">×</button>
+      <img id="lightboxImage" src="" alt="Expanded gallery image" />
+      <p class="modal-credit" id="lightboxCredit"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
